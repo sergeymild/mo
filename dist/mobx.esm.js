@@ -3698,8 +3698,6 @@ var ObservableArrayAdministration = /*#__PURE__*/function () {
       this.atom_.reportObserved();
       return this.dehanceValue_(this.values_[index]);
     }
-
-    console.warn(process.env.NODE_ENV !== "production" ? "[mobx] Out of bounds read: " + index : "[mobx.array] Attempt to read an array index (" + index + ") that is out of bounds (" + this.values_.length + "). Please check length first. Out of bound indices will not be tracked by MobX");
   };
 
   _proto.set_ = function set_(index, newValue) {
